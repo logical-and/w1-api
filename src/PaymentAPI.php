@@ -4,7 +4,7 @@ namespace W1;
 
 use W1\Form\PaymentForm;
 
-class W1Api {
+class PaymentAPI {
 
 	protected $merchantId;
 	protected $secretKey;

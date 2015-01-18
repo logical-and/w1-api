@@ -9,7 +9,7 @@ Here is code samples for each step:
 
 1-st step:
 ```php
-$api = new W1\W1Api('merchantId', 'secretKey');
+$api = new W1\PaymentAPI('merchantId', 'secretKey');
 echo $api->getFormHTMLDocument($api->createPaymentForm()
 	->setPaymentId(uniqid())
 	->setCultureId('ru' == $this->getLastLocale() ? 
@@ -25,7 +25,7 @@ echo $api->getFormHTMLDocument($api->createPaymentForm()
 
 2-nd step:
 ```php
-$api = new W1\W1Api('merchantId', 'secretKey');
+$api = new W1\PaymentAPI('merchantId', 'secretKey');
 if (!empty($_POST))
 {
 	if (!$api->createPaymentForm()->isPaymentAccepted($_POST))
