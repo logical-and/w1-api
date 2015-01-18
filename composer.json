@@ -1,0 +1,22 @@
+{
+	"name": "and/w1-api",
+	"description": "W1 API",
+	"keywords": [ "w1", "api", "payment" ],
+	"homepage": "https://github.com/logical-and/w1-api",
+	"license": "BSD-2-Clause",
+	"authors": [
+		{
+			"name": "And",
+			"email": "and.webdev@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"symfony/validator" : "~2.3.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"W1\\": "src/"
+		}
+	}
+}
