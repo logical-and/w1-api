@@ -88,7 +88,5 @@ class W1Api {
 	{
 		return 'WMI_RESULT=RETRY&WMI_DESCRIPTION=' . $description;
 	}
-
-
 }
  
